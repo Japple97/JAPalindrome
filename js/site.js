@@ -14,7 +14,7 @@ function checkForPalindrome(inputString) {
 
     const regex = /[^a-z0-9]/gi;
     inputString = inputString.replace(regex, "");
-    
+
     let reversedString = reverseString(inputString);
 
 
@@ -23,9 +23,9 @@ function checkForPalindrome(inputString) {
 }
 
 
-function reverseString(inputString) { 
-   let reversedString = '';
-   
+function reverseString(inputString) {
+    let reversedString = '';
+
     for (let index = inputString.length - 1; index >= 0; index--) {
         reversedString += inputString[index];
     }
@@ -42,7 +42,7 @@ function displayResults(results, inputString) {
     alert.classList.remove('alert-success');
 
     let messageElement = document.getElementById('message');
-    
+
     if (results == true) {
         alert.classList.add('alert-success');
         messageElement.textContent = "Hooray! A Palindrome!";
@@ -50,7 +50,7 @@ function displayResults(results, inputString) {
         alert.classList.add('alert-danger');
         messageElement.textContent = "Boooo not a palindrome.";
     }
-    
+
     let resultsElement = document.getElementById('results');
     //REGEX 
     inputString = inputString.toLowerCase();
