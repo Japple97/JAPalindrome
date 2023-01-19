@@ -13,7 +13,6 @@ function checkForPalindrome(inputString) {
     inputString = inputString.toLowerCase();
 
     const regex = /[^a-z0-9]/gi;
-
     inputString = inputString.replace(regex, "");
     
     let reversedString = reverseString(inputString);
@@ -53,6 +52,12 @@ function displayResults(results, inputString) {
     }
     
     let resultsElement = document.getElementById('results');
+    //REGEX 
+    inputString = inputString.toLowerCase();
+
+    const regex = /[^a-z0-9]/gi;
+    inputString = inputString.replace(regex, "");
+
     let reversedString = reverseString(inputString);
     resultsElement.textContent = reversedString;
 
