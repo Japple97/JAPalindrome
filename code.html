@@ -52,11 +52,9 @@
                             <a class="nav-link active" href="/code.html">The Code</a>
                         </li>
                         <li class="nav-item">
-                            <!--CHANGE THIS BEFORE PUBLISHING-->
                             <a class="nav-link" href="https://github.com/Japple97/JAPalindrome">The Repo</a>
                         </li>
                         <li class="nav-item">
-                            <!--LINK PORTFOLIO-->
                             <a class="nav-link" href="https://ja-cf-portfolio.netlify.app/">About</a>
                         </li>
                         <li class="nav-item">
@@ -140,7 +138,40 @@
             </div>
             <!--Code Description-->
             <div class="col-12 col-lg-4">
-                <p>The code is structured in four functions.</p>
+                <p>The code is a JavaScript code that checks if a given string is a palindrome or not. It consists of
+                    four functions.</p>
+                <p>getValues(): This is the main function that is triggered by an event, such as a button click. It
+                    retrieves the value
+                    entered by the user in an HTML input element with the ID 'userString' and stores it in the variable
+                    'inputString'. It
+                    then passes this value to the 'checkForPalindrome' function to check if it is a palindrome or not.
+                    The result of this
+                    function is passed on to the 'displayResults' function to display the result to the user.</p>
+                <p>checkForPalindrome(inputString): This function checks if the input string is a palindrome. It starts
+                    by converting the
+                    input string to lowercase and removes any non-alphanumeric characters using a regular expression
+                    (regex). The input
+                    string is then reversed using the 'reverseString' function, and the reversed string is compared to
+                    the original string.
+                    If they are equal, the function returns true, meaning the input string is a palindrome. If they are
+                    not equal, the
+                    function returns false, meaning the input string is not a palindrome.</p>
+                <p>reverseString(inputString): This function reverses the input string. It creates an empty string
+                    'reversedString' and
+                    loops through the input string from its last character to its first character, adding each character
+                    to the
+                    'reversedString'. Finally, it returns the 'reversedString'.</p>
+                <p>displayResults(results, inputString): This function displays the result of the palindrome check to
+                    the user. It starts
+                    by removing any previous classes from the 'alert' element and adds either the 'alert-success' or
+                    'alert-danger' class,
+                    depending on the result of the palindrome check. It then sets the text content of the 'message'
+                    element to display
+                    either "Hooray! A Palindrome!" if the input string is a palindrome, or "Boooo not a palindrome." if
+                    the input string is
+                    not a palindrome. Finally, it sets the text content of the 'results' element to display the reversed
+                    string and makes
+                    the 'alert' element visible by removing the 'invisible' class.</p>
             </div>
         </div>
     </main>
